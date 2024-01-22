@@ -45,7 +45,7 @@ ggplot() + geom_sf(data = Americas) + geom_sf(data = sitess.shp)
 # Look at the distribution of sites across climate conditions by IGBP:
 
 
-```{r, include=T}
+```{r}
 
 ggplot(sites) + geom_point(aes( x= Mean.Average.Temperature..degrees.C.,
 y= Mean.Average.Precipitation..mm., col= Vegetation.Abbreviation..IGBP.))
