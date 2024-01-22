@@ -42,8 +42,7 @@ ggplot() + geom_sf(data = Americas)
 ggplot() + geom_sf(data = Americas) + geom_sf(data = sitess.shp) 
 ```
 
-# Look at the distribution of sites across climate conditions by IGBP:
-
+# Look at the distribution of sites across climate conditions by IGBP.
 
 ```{r}
 
@@ -52,4 +51,16 @@ y= Mean.Average.Precipitation..mm., col= Vegetation.Abbreviation..IGBP.))
 
 ```
 
+# How does this compare to the Whittaker biome diagram: 
+
+```{r}
+devtools::install_github("valentinitnelav/plotbiomes")
+
+library(plotbiomes)
+
+whittaker_base_plot()
+
+whittaker_base_plot() + geom_point(data= sites, aes( x= Mean.Average.Temperature..degrees.C.,
+y= Mean.Average.Precipitation..mm./10))
+```
 
