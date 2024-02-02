@@ -55,7 +55,7 @@ y= Mean.Average.Precipitation..mm., col= Vegetation.Abbreviation..IGBP.))
 
 ```
 
-# How does this compare to the Whittaker biome diagram: 
+How does this compare to the Whittaker biome diagram: 
 
 ```{r, include=T}
 whittaker_base_plot()
